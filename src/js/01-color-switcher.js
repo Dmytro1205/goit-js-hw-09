@@ -5,7 +5,7 @@ let timerId = null
 
 stop.disabled = true;
 
-start.addEventListener("click", changeColor) 
+start.addEventListener("click", changeColor);
 
 stop.addEventListener('click', stopChangeColor);
 
@@ -18,7 +18,6 @@ function changeColor(event) {
      stop.disabled = false;
 
 }
-
 function stopChangeColor(event) {
         clearInterval(timerId);   
         start.disabled = false;
