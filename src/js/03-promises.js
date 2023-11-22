@@ -7,10 +7,10 @@ function onFormSubmit(event) {
   for (let i = 1; i < amount.value; i += 1) {
     createPromise(i, currentDelay)
       .then(({ position, delay }) => {
-        console.log(`Fulfilled promise ${position} in ${delay}ms`);
+        console.log(`✅ Fulfilled promise ${position} in ${delay}ms`);
       })
       .catch(({ position, delay }) => {
-        console.log(`Rejected promise ${position} in ${delay}ms`);
+        console.log(`❌ Rejected promise ${position} in ${delay}ms`);
       });
     currentDelay += Number(step.value);
   }
