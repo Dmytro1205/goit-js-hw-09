@@ -17,7 +17,6 @@ function onFormSubmit(event) {
   }
   event.target.reset();
 }
-
 function createPromise(position, delay) {
   return new Promise((resolve, reject) => {
     const shouldResolve = Math.random() > 0.3;
